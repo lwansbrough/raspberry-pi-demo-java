@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.lwansbrough.serverfarm.core.models.generated";
+option java_outer_classname = "SystemHealthTelemetryProto";
+
+message SystemHealthTelemetry {
+    string id = 1;
+    float cpuTemperature = 2;
+}
