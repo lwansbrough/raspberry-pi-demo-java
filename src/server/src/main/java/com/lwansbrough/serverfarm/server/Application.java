@@ -22,12 +22,12 @@ public class Application {
     @Autowired
     private TelemetryService telemetryService;
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
-	}
+    }
 
-	@Bean
-	public Executor taskExecutor() {
+    @Bean
+    public Executor taskExecutor() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setCorePoolSize(2);
         executor.setMaxPoolSize(2);
