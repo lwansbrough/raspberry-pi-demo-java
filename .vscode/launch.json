@@ -1,0 +1,34 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Application",
+      "request": "launch",
+      "mainClass": "com.lwansbrough.serverfarm.server.Application"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Application<server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.lwansbrough.serverfarm.server.Application",
+      "projectName": "server",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-App<client>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.lwansbrough.serverfarm.client.App",
+      "projectName": "client",
+      "args": ""
+    }
+  ]
+}
